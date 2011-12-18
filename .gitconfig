@@ -1,0 +1,17 @@
+[user]
+	name = Yassen Bantchev
+	email = yassenb@gmail.com
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    dy = difftool -y
+    dyc = difftool -y --cached
+[log]
+    date = iso
+[format]
+    pretty = %Cblue%h%Creset %an %Cgreen%ad%Creset%d%n%s%n%b
