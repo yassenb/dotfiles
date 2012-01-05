@@ -14,6 +14,6 @@
 [log]
     date = iso
 [format]
-    pretty = %Cblue%h%Creset %an %Cgreen%ad%Creset%d%n%s%n%b
+    pretty = %Cblue%h%Creset %an %Cgreen%ad%Creset%d%n%B
 [color]
     status = auto
