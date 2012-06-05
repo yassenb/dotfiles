@@ -89,8 +89,8 @@ map <C-Tab> :tabnext<CR>
 imap <C-Tab> <C-o>:tabnext<CR>
 map <Home> ^
 imap <Home> <C-o>^
-map <C-h> :set hlsearch!<CR>
-imap <C-h> <C-o>:set hlsearch!<CR>
+map <C-h> :nohlsearch<CR>
+imap <C-h> <C-o>:nohlsearch<CR>
 map <C-e> ,c<space>
 imap <C-e> <C-o>,c<space>
 
