@@ -71,32 +71,26 @@ let NERDSpaceDelims=1 " put spaces around comment delimiters
 
 " mappings
 imap jj <Esc>
+let mapleader = ","
 
+" easy interaction with the clipboard
 map <C-s> :update<CR>
 imap <C-s> <C-o>:update<CR>
-map <C-z> u 
-imap <C-z> <C-o>u
-map <C-y> <C-r> 
-imap <C-y> <C-o><C-r>
 map <C-c> "+y
 imap <C-c> <C-o>"+y
-noremap <C-q> <C-v>
-inoremap <C-q> <C-o><C-v>
+noremap vv <C-v>
 map <C-v> "+p
 imap <C-v> <Esc>"+pa
 cmap <C-v> <C-r>+
-map <C-x> "+x
-imap <C-x> <C-o>"+x
 
 map <C-t> :tabnew<CR>
 imap <C-t> <C-o>:tabnew<CR>
 map <C-w> :q<CR>
 imap <C-w> <C-o>:q<CR>
-map <C-Tab> :tabnext<CR>
-imap <C-Tab> <C-o>:tabnext<CR>
 map <Home> ^
 imap <Home> <C-o>^
 map <C-h> :nohlsearch<CR>
 imap <C-h> <C-o>:nohlsearch<CR>
-map <C-e> ,c<space>
-imap <C-e> <C-o>,c<space>
+
+" NERD commenter
+map <Leader>/ <Leader>c<space>
