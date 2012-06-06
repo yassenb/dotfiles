@@ -19,6 +19,7 @@ set encoding=utf-8 " set the encoding for displaying
 set fileencodings=ucs-bom,utf-8,cp1251 " set the encoding for writing files
 set tabpagemax=100  " max number of tabs
 set printoptions=header:0 " don't print file header when printing
+set hidden " allow switching buffers without having to save
 
 " add support for switching to cyrillic inside vim with C-^ and then set the default back to english
 set keymap=bulgarian-phonetic
@@ -63,6 +64,7 @@ Bundle "gmarik/vundle"
 
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
+Bundle "thisivan/vim-bufexplorer"
 
 filetype plugin indent on
 
@@ -83,8 +85,6 @@ map <C-v> "+p
 imap <C-v> <Esc>"+pa
 cmap <C-v> <C-r>+
 
-map <C-t> :tabnew<CR>
-imap <C-t> <C-o>:tabnew<CR>
 map <C-w> :q<CR>
 imap <C-w> <C-o>:q<CR>
 map <Home> ^
@@ -94,3 +94,6 @@ imap <C-h> <C-o>:nohlsearch<CR>
 
 " NERD commenter
 map <Leader>/ <Leader>c<space>
+
+" bufexplorer
+map <C-Tab> <Leader>bej
