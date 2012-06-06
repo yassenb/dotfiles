@@ -11,6 +11,7 @@
     st = status
     dy = difftool -y
     dyc = difftool -y --cached
+    br = branch
 [log]
     date = iso
 [format]
