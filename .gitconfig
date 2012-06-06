@@ -18,3 +18,5 @@
     pretty = %Cblue%h%Creset %an %Cgreen%ad%Creset%d%n%B
 [color]
     status = auto
+[core]
+	excludesfile = ~/.gitignore
