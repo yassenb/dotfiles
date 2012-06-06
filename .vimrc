@@ -49,6 +49,24 @@ autocmd BufReadPost *
     \ endif
 
 " plug-in options
+
+" ----------
+" Bundle
+" ----------
+
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle "gmarik/vundle"
+
+Bundle "scrooloose/nerdtree"
+Bundle "scrooloose/nerdcommenter"
+
+filetype plugin indent on
+
+" NERD commenter
 let NERDSpaceDelims=1 " put spaces around comment delimiters
 
 " mappings
