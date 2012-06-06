@@ -1,12 +1,46 @@
-set nocompatible
+" general options
+set nocompatible " makes Vim not compatible with Vi (usable)
+set ruler " show the cursor position all the time
+set hlsearch " highlight matches when searching
+set nowrap " no wrapping for long lines
+set number " show line numbers
+set smartindent " automatically indents based on file syntax
+set autoindent " autoindents when continuing on a new line
+set tabstop=4  " number of spaces a tab stands for
+set shiftwidth=4  " default indentation size
+set shiftround  " round indent to a multiple of shiftwidth
+set expandtab  " convert tabs to spaces on input
+set ignorecase " when searching ignore case
+set smartcase  " when searching guess whether it's case sensitive based on whether there are capitals
+set wildmode=longest,full  " BASH like autocompletion
+set backspace=indent,eol,start  " for a normal backspace in insert mode
+set nobackup " don't create backup files
+set encoding=utf-8 " set the encoding for displaying
+set fileencodings=ucs-bom,utf-8,cp1251 " set the encoding for writing files
+set tabpagemax=100  " max number of tabs
+set printoptions=header:0 " don't print file header when printing
 
-set ruler  " show the cursor position all the time
+" add support for switching to cyrillic inside vim with C-^ and then set the default back to english
+set keymap=bulgarian-phonetic
+set iminsert=0
+set imsearch=-1
 
-" In many terminal emulators the mouse works just fine, thus enable it.
-set mouse=a
+" gui options
+set mouse=a " in many terminal emulators the mouse works just fine, thus enable it
+set guioptions-=T " hide the toolbar
+set guioptions+=b " horizontal scroll
 
-syntax on  " syntax highlighting
-set hlsearch  " highlight matches when searching
+syntax on " enable syntax highlighting
+filetype plugin indent on " smart indent based on file type
+tab all " when opening multiple files open them in tabs
+autocmd BufNewFile,BufRead *.json set ft=javascript " enable syntax highlighting for JSON
+
+colorscheme desert
+
+" takes care of the terminal encoding
+if &termencoding == ""
+  let &termencoding = &encoding
+endif
 
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
@@ -14,56 +48,11 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
-set nowrap  " no wrapping for long lines
+" plug-in options
+let NERDSpaceDelims=1 " put spaces around comment delimiters
 
-set guioptions-=T  " hide the toolbar
-set guioptions+=b  " horizontal scroll
-
-set number  " show line numbers
-
-colorscheme desert
-
-if &termencoding == ""
-  let &termencoding = &encoding
-endif
-set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,cp1251
-setglobal fileencoding=utf-8
-
-" add support for switching to cyrillic inside vim with C-6 and then set the default back to english
-set keymap=bulgarian-phonetic
-set iminsert=0
-set imsearch=-1
-
-set smartindent
-set autoindent
-set ignorecase
-set smartcase  " when searching guess whether it's case sensitive
-
-set tabstop=4  " number of spaces a tab stands for
-set shiftwidth=4  " default indentation size
-set shiftround  " round indent to a multiple of shiftwidth
-set expandtab  " convert tabs to spaces on input
-
-filetype plugin indent on  " smart indent based on file type
-
-set wildmode=longest,full  " BASH like autocompletion
-set backspace=indent,eol,start  " for a normal backspace in insert mode
-set nobackup
-
-set tabpagemax=100  " max number of tabs
-
-tab all  " when opening multiple files open them in tabs
-
-let NERDSpaceDelims=1
-
-set printoptions=header:0
-
-" enable syntax highlighting for JSON
-autocmd BufNewFile,BufRead *.json set ft=javascript
-
-imap jk <Esc>
-imap kj <Esc>
+" mappings
+imap jj <Esc>
 
 map <C-s> :update<CR>
 imap <C-s> <C-o>:update<CR>
@@ -93,6 +82,3 @@ map <C-h> :nohlsearch<CR>
 imap <C-h> <C-o>:nohlsearch<CR>
 map <C-e> ,c<space>
 imap <C-e> <C-o>,c<space>
-
-" tips:
-"   set incsearch
