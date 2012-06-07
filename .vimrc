@@ -49,6 +49,10 @@ autocmd BufReadPost *
     \   exe "normal! g`\"" |
     \ endif
 
+" highlight extra spaces at end of lines
+highlight ExtraWhitespace guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+
 " plug-in options
 
 " ----------
