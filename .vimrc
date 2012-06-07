@@ -110,4 +110,4 @@ imap <C-h> <C-o>:nohlsearch<CR>
 map <Leader>/ <Leader>c<space>
 
 " bufexplorer
-map <C-Tab> <Leader>bej
+map <C-n> <Leader>bej
