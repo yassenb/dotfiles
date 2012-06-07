@@ -6,18 +6,20 @@ set nowrap " no wrapping for long lines
 set number " show line numbers
 set smartindent " automatically indents based on file syntax
 set autoindent " autoindents when continuing on a new line
-set tabstop=4  " number of spaces a tab stands for
-set shiftwidth=4  " default indentation size
-set shiftround  " round indent to a multiple of shiftwidth
-set expandtab  " convert tabs to spaces on input
+set tabstop=4 " number of spaces a tab stands for
+set shiftwidth=4 " default indentation size
+set textwidth=119 " a line should be no longer than 120 symbols (including <LF>)
+set colorcolumn=+1 " display a print margin that corresponds to 'textwidth'
+set shiftround " round indent to a multiple of shiftwidth
+set expandtab " convert tabs to spaces on input
 set ignorecase " when searching ignore case
-set smartcase  " when searching guess whether it's case sensitive based on whether there are capitals
-set wildmode=longest,full  " BASH like autocompletion
-set backspace=indent,eol,start  " for a normal backspace in insert mode
+set smartcase " when searching guess whether it's case sensitive based on whether there are capitals
+set wildmode=longest,full " BASH like autocompletion
+set backspace=indent,eol,start " for a normal backspace in insert mode
 set nobackup " don't create backup files
 set encoding=utf-8 " set the encoding for displaying
 set fileencodings=ucs-bom,utf-8,cp1251 " set the encoding for writing files
-set tabpagemax=100  " max number of tabs
+set tabpagemax=100 " max number of tabs
 set printoptions=header:0 " don't print file header when printing
 set hidden " allow switching buffers without having to save
 
@@ -37,6 +39,7 @@ tab all " when opening multiple files open them in tabs
 autocmd BufNewFile,BufRead *.json set ft=javascript " enable syntax highlighting for JSON
 
 colorscheme desert
+highlight ColorColumn guibg=darkgrey
 
 " takes care of the terminal encoding
 if &termencoding == ""
