@@ -75,6 +75,10 @@ filetype plugin indent on
 " NERD commenter
 let NERDSpaceDelims=1 " put spaces around comment delimiters
 
+" bufexplorer
+let g:bufExplorerSplitOutPathName=0 " don't split path from file name when listing buffers
+let g:bufExplorerDefaultHelp=0 " don't show any help when opening the explorer
+
 " mappings
 imap jj <Esc>
 let mapleader = ","
