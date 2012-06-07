@@ -8,8 +8,6 @@ set smartindent " automatically indents based on file syntax
 set autoindent " autoindents when continuing on a new line
 set tabstop=4 " number of spaces a tab stands for
 set shiftwidth=4 " default indentation size
-set textwidth=119 " a line should be no longer than 120 symbols (including <LF>)
-set colorcolumn=+1 " display a print margin that corresponds to 'textwidth'
 set shiftround " round indent to a multiple of shiftwidth
 set expandtab " convert tabs to spaces on input
 set ignorecase " when searching ignore case
@@ -35,7 +33,10 @@ set guioptions+=b " horizontal scroll
 
 syntax on " enable syntax highlighting
 filetype plugin indent on " smart indent based on file type
-autocmd BufNewFile,BufRead *.json set ft=javascript " enable syntax highlighting for JSON
+autocmd BufNewFile,BufRead *.json set filetype=javascript " enable syntax highlighting for JSON
+" a line should be no longer than 120 symbols (including <LF>)
+autocmd BufNewFile,BufRead *.{rb,py,js,java,c,cpp,h,scala} setlocal textwidth=119
+autocmd BufEnter * set colorcolumn=+1 " display a print margin that corresponds to 'textwidth'
 
 colorscheme desert
 highlight ColorColumn guibg=darkgrey
