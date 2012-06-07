@@ -35,7 +35,6 @@ set guioptions+=b " horizontal scroll
 
 syntax on " enable syntax highlighting
 filetype plugin indent on " smart indent based on file type
-tab all " when opening multiple files open them in tabs
 autocmd BufNewFile,BufRead *.json set ft=javascript " enable syntax highlighting for JSON
 
 colorscheme desert
@@ -96,8 +95,8 @@ map <C-v> "+p
 imap <C-v> <Esc>"+pa
 cmap <C-v> <C-r>+
 
-map <C-w> :q<CR>
-imap <C-w> <C-o>:q<CR>
+map <C-w> :bdelete<CR>
+imap <C-w> <C-o>:bdelete<CR>
 map <Home> ^
 imap <Home> <C-o>^
 map <C-h> :nohlsearch<CR>
