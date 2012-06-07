@@ -71,7 +71,7 @@ Bundle "gmarik/vundle"
 
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
-Bundle "thisivan/vim-bufexplorer"
+Bundle "vim-scripts/bufexplorer.zip"
 
 filetype plugin indent on
 
