@@ -58,6 +58,8 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 
 " plug-in options
 
+runtime macros/matchit.vim " smarter matching with % (ifs, elses...)
+
 " ----------
 " Bundle
 " ----------
@@ -72,6 +74,7 @@ Bundle "gmarik/vundle"
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
 Bundle "vim-scripts/bufexplorer.zip"
+Bundle "gregsexton/MatchTag"
 
 filetype plugin indent on
 
