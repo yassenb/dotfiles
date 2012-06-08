@@ -22,6 +22,8 @@ set printoptions=header:0 " don't print file header when printing
 set hidden " allow switching buffers without having to save
 set undofile " save undo's after file closes
 set undodir=$HOME/.vim/undo " where to save undo histories
+set 	list
+set listchars=tab:▸\ 
 
 " add support for switching to cyrillic inside vim with C-^ and then set the default back to english
 set keymap=bulgarian-phonetic
