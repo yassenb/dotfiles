@@ -86,7 +86,7 @@ filetype plugin indent on
 let NERDSpaceDelims=1 " put spaces around comment delimiters
 
 " bufexplorer
-let g:bufExplorerSplitOutPathName=0 " don't split path from file name when listing buffers
+let g:bufExplorerShowRelativePath=1 " show relative paths
 let g:bufExplorerDefaultHelp=0 " don't show any help when opening the explorer
 
 " mappings
