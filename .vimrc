@@ -87,8 +87,6 @@ filetype plugin indent on
 let NERDSpaceDelims=1 " put spaces around comment delimiters
 
 " CtrlP
-" by default search through the most recently used files first
-let g:ctrlp_cmd = "CtrlPMRUFiles"
 let g:ctrlp_open_new_file = "r" " open newly created files in the same window
 
 " mappings
