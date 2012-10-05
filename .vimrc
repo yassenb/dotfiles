@@ -39,7 +39,7 @@ syntax on " enable syntax highlighting
 filetype plugin indent on " smart indent based on file type
 autocmd BufNewFile,BufRead *.json set filetype=javascript " enable syntax highlighting for JSON
 " a line should be no longer than 120 symbols (including <LF>)
-autocmd FileType ruby,python,javascript,java,cpp setlocal textwidth=119
+autocmd FileType ruby,python,javascript,java,cpp,haml setlocal textwidth=119
 autocmd BufEnter * set colorcolumn=+1 " display a print margin that corresponds to 'textwidth'
 
 colorscheme desert
@@ -77,17 +77,19 @@ Bundle "gmarik/vundle"
 
 Bundle "scrooloose/nerdtree"
 Bundle "scrooloose/nerdcommenter"
-Bundle "vim-scripts/bufexplorer.zip"
 Bundle "gregsexton/MatchTag"
+Bundle "tpope/vim-surround"
+Bundle "kien/ctrlp.vim"
 
 filetype plugin indent on
 
 " NERD commenter
 let NERDSpaceDelims=1 " put spaces around comment delimiters
 
-" bufexplorer
-let g:bufExplorerShowRelativePath=1 " show relative paths
-let g:bufExplorerDefaultHelp=0 " don't show any help when opening the explorer
+" CtrlP
+" by default search through the most recently used files first
+let g:ctrlp_cmd = "CtrlPMRUFiles"
+let g:ctrlp_open_new_file = "r" " open newly created files in the same window
 
 " mappings
 imap jj <Esc>
@@ -109,9 +111,13 @@ map <Home> ^
 imap <Home> <C-o>^
 map <C-h> :nohlsearch<CR>
 imap <C-h> <C-o>:nohlsearch<CR>
+map <C-Tab> :wincmd w<CR>
 
 " NERD commenter
 map <Leader>/ <Leader>c<space>
 
-" bufexplorer
-map <C-n> <Leader>bej
+" CtrlP
+map <C-n> :CtrlPBuffer<CR>
+
+" NERD Tree
+map <F2> :NERDTreeToggle<CR>
