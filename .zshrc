@@ -25,4 +25,8 @@ alias -r ls="ls -F --color=auto" \
 source ~/.zsh/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-history-substring-search.zsh
 
+bindkey "${terminfo[kcuu1]}" history-substring-search-up
+bindkey "${terminfo[kcud1]}" history-substring-search-down
+bindkey "${terminfo[kent]}" accept-line
+
 compdef -d git
