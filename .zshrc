@@ -20,6 +20,7 @@ alias -r ls="ls -F --color=auto" \
          ll="ls -l" \
          la="ls -al" \
          grep="grep --color=auto" \
+         xo="xdg-open" \
 
 source ~/.zsh/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-history-substring-search.zsh
