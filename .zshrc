@@ -5,7 +5,7 @@ colors
 
 setopt AUTO_CD
 setopt AUTO_PUSHD
-setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_DUPS APPEND_HISTORY HIST_IGNORE_SPACE
 
 export PS1="%m%(?..%{${fg[red]}%})%B%# %{${fg[default]}%}%b"
 RPS1="    %~"
