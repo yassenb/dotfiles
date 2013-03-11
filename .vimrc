@@ -90,7 +90,6 @@ let NERDSpaceDelims=1 " put spaces around comment delimiters
 let g:ctrlp_open_new_file = "r" " open newly created files in the same window
 
 " mappings
-imap jj <Esc>
 let mapleader = ","
 
 " easy interaction with the clipboard
