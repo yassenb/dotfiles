@@ -39,7 +39,8 @@ syntax on " enable syntax highlighting
 filetype plugin indent on " smart indent based on file type
 autocmd BufNewFile,BufRead *.json set filetype=javascript " enable syntax highlighting for JSON
 " a line should be no longer than 120 symbols (including <LF>)
-autocmd FileType ruby,python,javascript,java,cpp,haml setlocal textwidth=119
+autocmd FileType ruby,python,javascript,java,cpp,haml,coffee setlocal textwidth=119
+autocmd FileType coffee setlocal shiftwidth=2
 autocmd BufEnter * set colorcolumn=+1 " display a print margin that corresponds to 'textwidth'
 
 colorscheme desert
@@ -82,6 +83,7 @@ Bundle "tpope/vim-surround"
 Bundle "kien/ctrlp.vim"
 Bundle "guns/vim-clojure-static"
 Bundle "tpope/vim-foreplay"
+Bundle "kchmck/vim-coffee-script"
 
 filetype plugin indent on
 
