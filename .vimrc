@@ -80,6 +80,8 @@ Bundle "scrooloose/nerdcommenter"
 Bundle "gregsexton/MatchTag"
 Bundle "tpope/vim-surround"
 Bundle "kien/ctrlp.vim"
+Bundle "guns/vim-clojure-static"
+Bundle "tpope/vim-foreplay"
 
 filetype plugin indent on
 
