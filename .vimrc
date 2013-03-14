@@ -84,6 +84,11 @@ Bundle "kien/ctrlp.vim"
 Bundle "guns/vim-clojure-static"
 Bundle "tpope/vim-foreplay"
 Bundle "kchmck/vim-coffee-script"
+Bundle "sickill/vim-pasta"
+Bundle "tpope/vim-repeat"
+Bundle "Raimondi/delimitMate"
+Bundle "ervandew/supertab"
+Bundle "tpope/vim-fugitive"
 
 filetype plugin indent on
 
@@ -92,6 +97,13 @@ let NERDSpaceDelims=1 " put spaces around comment delimiters
 
 " CtrlP
 let g:ctrlp_open_new_file = "r" " open newly created files in the same window
+
+" delimitMate
+let delimitMate_expand_space = 1
+let delimitMate_expand_cr = 1
+
+" supertab
+" let g:SuperTabDefaultCompletionType = "context"
 
 " mappings
 let mapleader = ","
