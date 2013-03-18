@@ -108,7 +108,22 @@ let delimitMate_expand_cr = 1
 " mappings
 let mapleader = ","
 
-" easy interaction with the clipboard
+map <Space> :
+
+map <C-w> :bdelete<CR>
+imap <C-w> <C-o>:bdelete<CR>
+map <C-Tab> :wincmd w<CR>
+
+map <C-h> :nohlsearch<CR>
+
+imap <C-h> <C-o>h
+imap <C-j> <C-o>j
+imap <C-k> <C-o>k
+imap <C-l> <C-o>l
+map <C-j> <C-e>
+map <C-k> <C-y>
+
+" some sane editor mappings for frequently used functionality
 map <C-s> :update<CR>
 imap <C-s> <C-o>:update<CR>
 map <C-c> "+y
@@ -117,14 +132,8 @@ noremap vv <C-v>
 map <C-v> "+p
 imap <C-v> <Esc>"+pa
 cmap <C-v> <C-r>+
-
-map <C-w> :bdelete<CR>
-imap <C-w> <C-o>:bdelete<CR>
 map <Home> ^
 imap <Home> <C-o>^
-map <C-h> :nohlsearch<CR>
-imap <C-h> <C-o>:nohlsearch<CR>
-map <C-Tab> :wincmd w<CR>
 
 " NERD commenter
 map <Leader>/ <Leader>c<space>
