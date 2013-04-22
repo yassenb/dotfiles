@@ -97,6 +97,7 @@ let NERDSpaceDelims=1 " put spaces around comment delimiters
 
 " CtrlP
 let g:ctrlp_open_new_file = "r" " open newly created files in the same window
+let g:ctrlp_custom_ignore = '\v\/(\.git|node_modules)$'
 
 " delimitMate
 let delimitMate_expand_space = 1
