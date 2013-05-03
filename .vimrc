@@ -4,7 +4,6 @@ set ruler " show the cursor position all the time
 set hlsearch " highlight matches when searching
 set nowrap " no wrapping for long lines
 set number " show line numbers
-set smartindent " automatically indents based on file syntax
 set autoindent " autoindents when continuing on a new line
 set tabstop=4 " number of spaces a tab stands for
 set shiftwidth=4 " default indentation size
