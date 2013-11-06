@@ -28,6 +28,8 @@ set listchars=tab:▸\
 set keymap=bulgarian-phonetic
 set iminsert=0
 set imsearch=-1
+" this allows for normal mode mappings to work when the layout is switched to cyrillic from the OS
+set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,
 
 " gui options
 set mouse=a " in many terminal emulators the mouse works just fine, thus enable it
