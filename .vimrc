@@ -35,6 +35,7 @@ set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕ�
 set mouse=a " in many terminal emulators the mouse works just fine, thus enable it
 set guioptions-=T " hide the toolbar
 set guioptions+=b " horizontal scroll
+set laststatus=2 " always display the statusline
 
 syntax on " enable syntax highlighting
 filetype plugin indent on " smart indent based on file type
@@ -89,8 +90,11 @@ Bundle "kchmck/vim-coffee-script"
 Bundle "sickill/vim-pasta"
 Bundle "tpope/vim-repeat"
 Bundle "Raimondi/delimitMate"
+Bundle "tpope/vim-endwise"
 Bundle "ervandew/supertab"
 Bundle "tpope/vim-fugitive"
+Bundle "bling/vim-airline"
+Bundle "tpope/vim-eunuch"
 
 filetype plugin indent on
 
@@ -109,6 +113,9 @@ let delimitMate_expand_cr = 1
 
 " supertab
 " let g:SuperTabDefaultCompletionType = "context"
+
+" airline
+let g:airline#extensions#tabline#enabled = 1
 
 " mappings
 let mapleader = ","
