@@ -128,6 +128,9 @@ map <C-Tab> :wincmd w<CR>
 
 map <C-h> :nohlsearch<CR>
 
+map <CR> o<Esc>
+map <S-CR> O<Esc>
+
 imap <C-h> <C-o>h
 imap <C-j> <C-o>j
 imap <C-k> <C-o>k
