@@ -95,6 +95,9 @@ Bundle "ervandew/supertab"
 Bundle "tpope/vim-fugitive"
 Bundle "bling/vim-airline"
 Bundle "tpope/vim-eunuch"
+Bundle "AndrewRadev/sideways.vim"
+Bundle "AndrewRadev/splitjoin.vim"
+Bundle "AndrewRadev/switch.vim"
 
 filetype plugin indent on
 
@@ -116,6 +119,12 @@ let delimitMate_expand_cr = 1
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+
+" splitjoin
+let g:splitjoin_split_mapping = ''
+let g:splitjoin_join_mapping = ''
+let g:splitjoin_normalize_whitespace = 1
+let g:splitjoin_align = 1
 
 " mappings
 let mapleader = ","
@@ -158,3 +167,18 @@ map <C-n> :CtrlPBuffer<CR>
 
 " NERD Tree
 map <F2> :NERDTreeToggle<CR>
+
+" sideways
+nmap <C-h> :SidewaysLeft<cr>
+nmap <C-l> :SidewaysRight<cr>
+omap aa <Plug>SidewaysArgumentTextobjA
+xmap aa <Plug>SidewaysArgumentTextobjA
+omap ia <Plug>SidewaysArgumentTextobjI
+xmap ia <Plug>SidewaysArgumentTextobjI
+
+" splitjoin
+nmap sj :SplitjoinJoin<CR>
+nmap sk :SplitjoinSplit<CR>
+
+" switch
+nmap <Leader>s :Switch<CR>
