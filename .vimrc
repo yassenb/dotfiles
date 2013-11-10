@@ -135,7 +135,7 @@ map <C-w> :bdelete<CR>
 imap <C-w> <C-o>:bdelete<CR>
 map <C-Tab> :wincmd w<CR>
 
-map <C-h> :nohlsearch<CR>
+map <Leader>h :nohlsearch<CR>
 
 map <CR> o<Esc>
 map <S-CR> O<Esc>
