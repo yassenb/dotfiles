@@ -98,6 +98,7 @@ Bundle "tpope/vim-eunuch"
 Bundle "AndrewRadev/sideways.vim"
 Bundle "AndrewRadev/splitjoin.vim"
 Bundle "AndrewRadev/switch.vim"
+Bundle "rking/ag.vim"
 
 filetype plugin indent on
 
@@ -135,7 +136,7 @@ map <C-w> :bdelete<CR>
 imap <C-w> <C-o>:bdelete<CR>
 map <C-Tab> :wincmd w<CR>
 
-map <Leader>h :nohlsearch<CR>
+map <Leader>h :nohlsearch \| cclose<CR>
 
 map <CR> o<Esc>
 map <S-CR> O<Esc>
@@ -182,3 +183,6 @@ nmap sk :SplitjoinSplit<CR>
 
 " switch
 nmap <Leader>s :Switch<CR>
+
+" silver searcher
+map <Leader>a :Ag! 
