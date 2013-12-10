@@ -110,6 +110,7 @@ let g:ctrlp_open_new_file = "r" " open newly created files in the same window
 " open multiple files as hidden buffers and switch to the last opened
 let g:ctrlp_open_multiple_files = "1vj"
 let g:ctrlp_custom_ignore = '\v(\/(\.git|node_modules))$|(\.pyc$)'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:30,results:100'
 
 " delimitMate
 let delimitMate_expand_space = 1
