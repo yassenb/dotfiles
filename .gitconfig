@@ -12,6 +12,7 @@
     dy = difftool -y
     dyc = difftool -y --cached
     br = branch
+    puff = pull --ff-only
 [log]
     date = iso
 [format]
