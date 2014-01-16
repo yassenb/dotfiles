@@ -30,5 +30,9 @@ bindkey "${terminfo[kcuu1]}" history-substring-search-up
 bindkey "${terminfo[kcud1]}" history-substring-search-down
 bindkey "${terminfo[kent]}" accept-line
 
-eval "$(rbenv init -)"
-eval "$(direnv hook zsh)"
+[ $(command -v rbenv) ] && eval "$(rbenv init -)"
+[ $(command -v direnv) ] && eval "$(direnv hook zsh)"
+
+# if this is removed and the last expression above has a bad exit code zsh will start with showing a bad exit code from
+# the previously executed command
+true
