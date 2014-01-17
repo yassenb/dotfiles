@@ -99,6 +99,7 @@ Bundle "AndrewRadev/sideways.vim"
 Bundle "AndrewRadev/splitjoin.vim"
 Bundle "AndrewRadev/switch.vim"
 Bundle "rking/ag.vim"
+Bundle "rodjek/vim-puppet"
 
 filetype plugin indent on
 
