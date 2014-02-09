@@ -135,17 +135,6 @@ let g:splitjoin_join_mapping = ''
 let g:splitjoin_normalize_whitespace = 1
 let g:splitjoin_align = 1
 
-" switch
-autocmd FileType ruby let b:switch_custom_definitions =
-    \ [
-    \   {
-    \     '\(\S\+\s\+=\s\+\)\?\(\k\+\)\(\s*\)(\([^,]\+\(,\s\+[^,]\+\)*\))':
-    \         '\1\2\3 \4',
-    \     '\(\S\+\s\+=\s\+\)\?\(\k\+\)\(\s\+\)\([^,]\+\(,\s\+[^,]\+\)*\)':
-    \         '\1\2(\4)',
-    \   },
-    \ ]
-
 " mappings
 let mapleader = ","
 
