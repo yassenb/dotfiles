@@ -101,6 +101,7 @@ Bundle "AndrewRadev/switch.vim"
 Bundle "rking/ag.vim"
 Bundle "rodjek/vim-puppet"
 Bundle "thoughtbot/vim-rspec"
+Bundle "ecomba/vim-ruby-refactoring"
 
 filetype plugin indent on
 
