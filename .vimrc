@@ -100,6 +100,7 @@ Bundle "AndrewRadev/splitjoin.vim"
 Bundle "AndrewRadev/switch.vim"
 Bundle "rking/ag.vim"
 Bundle "rodjek/vim-puppet"
+Bundle "thoughtbot/vim-rspec"
 
 filetype plugin indent on
 
@@ -134,6 +135,9 @@ let g:splitjoin_split_mapping = ''
 let g:splitjoin_join_mapping = ''
 let g:splitjoin_normalize_whitespace = 1
 let g:splitjoin_align = 1
+
+" rspec-vim
+let g:rspec_command = "!rspec --no-colour {spec}"
 
 " mappings
 let mapleader = ","
@@ -194,3 +198,9 @@ nmap <Leader>s :Switch<CR>
 
 " silver searcher
 map <Leader>a :Ag! 
+
+" rspec-vim
+map <Leader>tf :call RunCurrentSpecFile()<CR>
+map <Leader>tt :call RunNearestSpec()<CR>
+map <Leader>tl :call RunLastSpec()<CR>
+map <Leader>ta :call RunAllSpecs()<CR>
