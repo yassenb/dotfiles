@@ -103,6 +103,7 @@ Bundle "rodjek/vim-puppet"
 Bundle "thoughtbot/vim-rspec"
 Bundle "ecomba/vim-ruby-refactoring"
 Bundle "godlygeek/tabular"
+Bundle "vim-scripts/bufkill.vim"
 
 filetype plugin indent on
 
@@ -146,8 +147,8 @@ let mapleader = ","
 
 map <Space> :
 
-map <C-w> :bdelete<CR>
-imap <C-w> <C-o>:bdelete<CR>
+map <C-w> :BD<CR>
+imap <C-w> <C-o>:BD<CR>
 map <C-Tab> :wincmd w<CR>
 
 map <Leader>h :nohlsearch \| cclose<CR>
