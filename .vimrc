@@ -102,6 +102,7 @@ Bundle "rking/ag.vim"
 Bundle "rodjek/vim-puppet"
 Bundle "thoughtbot/vim-rspec"
 Bundle "ecomba/vim-ruby-refactoring"
+Bundle "godlygeek/tabular"
 
 filetype plugin indent on
 
@@ -205,3 +206,7 @@ map <Leader>tf :call RunCurrentSpecFile()<CR>
 map <Leader>tt :call RunNearestSpec()<CR>
 map <Leader>tl :call RunLastSpec()<CR>
 map <Leader>ta :call RunAllSpecs()<CR>
+
+" Tabular
+map <Leader>= :Tabular /
+map <Leader>== :Tabular<CR>
