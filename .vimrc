@@ -104,6 +104,7 @@ Bundle "thoughtbot/vim-rspec"
 Bundle "ecomba/vim-ruby-refactoring"
 Bundle "godlygeek/tabular"
 Bundle "vim-scripts/bufkill.vim"
+Bundle "tpope/vim-rails"
 
 filetype plugin indent on
 
