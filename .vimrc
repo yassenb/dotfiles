@@ -184,6 +184,7 @@ map <C-n> :CtrlPBuffer<CR>
 
 " NERD Tree
 map <F2> :NERDTreeToggle<CR>
+map <Leader>f :NERDTreeFind<CR>
 
 " sideways
 nmap <C-h> :SidewaysLeft<cr>
