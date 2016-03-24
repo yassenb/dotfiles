@@ -42,7 +42,7 @@ filetype plugin indent on " smart indent based on file type
 autocmd BufNewFile,BufRead *.json set filetype=javascript " enable syntax highlighting for JSON
 " a line should be no longer than 120 symbols (including <LF>)
 autocmd FileType ruby,python,javascript,java,cpp,haml,coffee setlocal textwidth=119
-autocmd FileType coffee setlocal shiftwidth=2
+autocmd FileType coffee,ruby,html.handlebars setlocal shiftwidth=2
 autocmd BufEnter * set colorcolumn=+1 " display a print margin that corresponds to 'textwidth'
 autocmd BufRead,BufNewFile *.iced setfiletype coffee
 
