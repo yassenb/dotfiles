@@ -3,3 +3,4 @@
 .project
 .envrc
 .rspec-local
+.agignore
