@@ -105,6 +105,8 @@ Bundle "godlygeek/tabular"
 Bundle "vim-scripts/bufkill.vim"
 Bundle "tpope/vim-rails"
 Bundle "mustache/vim-mustache-handlebars"
+Bundle "tpope/vim-projectionist"
+Bundle "AndrewRadev/ember_tools.vim"
 
 filetype plugin indent on
 
