@@ -14,6 +14,7 @@ set smartcase " when searching guess whether it's case sensitive based on whethe
 set wildmode=longest,full " BASH like autocompletion
 set backspace=indent,eol,start " for a normal backspace in insert mode
 set nobackup " don't create backup files
+set noswapfile " don't create swap files
 set encoding=utf-8 " set the encoding for displaying
 set fileencodings=ucs-bom,utf-8,cp1251 " set the encoding for writing files
 set tabpagemax=100 " max number of tabs
