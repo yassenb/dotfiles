@@ -78,36 +78,36 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle "gmarik/vundle"
+Plugin 'gmarik/vundle'
 
-Bundle "scrooloose/nerdtree"
-Bundle "scrooloose/nerdcommenter"
-Bundle "gregsexton/MatchTag"
-Bundle "tpope/vim-surround"
-Bundle "kien/ctrlp.vim"
-Bundle "guns/vim-clojure-static"
-Bundle "tpope/vim-foreplay"
-Bundle "kchmck/vim-coffee-script"
-Bundle "sickill/vim-pasta"
-Bundle "tpope/vim-repeat"
-Bundle "Raimondi/delimitMate"
-Bundle "tpope/vim-endwise"
-Bundle "ervandew/supertab"
-Bundle "tpope/vim-fugitive"
-Bundle "bling/vim-airline"
-Bundle "tpope/vim-eunuch"
-Bundle "AndrewRadev/sideways.vim"
-Bundle "AndrewRadev/splitjoin.vim"
-Bundle "AndrewRadev/switch.vim"
-Bundle "rking/ag.vim"
-Bundle "rodjek/vim-puppet"
-Bundle "thoughtbot/vim-rspec"
-Bundle "godlygeek/tabular"
-Bundle "vim-scripts/bufkill.vim"
-Bundle "tpope/vim-rails"
-Bundle "mustache/vim-mustache-handlebars"
-Bundle "tpope/vim-projectionist"
-Bundle "AndrewRadev/ember_tools.vim"
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'gregsexton/MatchTag'
+Plugin 'tpope/vim-surround'
+Plugin 'kien/ctrlp.vim'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-foreplay'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'sickill/vim-pasta'
+Plugin 'tpope/vim-repeat'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-endwise'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-eunuch'
+Plugin 'AndrewRadev/sideways.vim'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'AndrewRadev/switch.vim'
+Plugin 'rking/ag.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/bufkill.vim'
+Plugin 'tpope/vim-rails'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'tpope/vim-projectionist'
+Plugin 'AndrewRadev/ember_tools.vim'
 
 filetype plugin indent on
 
