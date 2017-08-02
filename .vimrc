@@ -97,7 +97,6 @@ Plugin 'tpope/vim-eunuch'
 Plugin 'AndrewRadev/sideways.vim'
 Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'AndrewRadev/switch.vim'
-Plugin 'rking/ag.vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'godlygeek/tabular'
 Plugin 'vim-scripts/bufkill.vim'
@@ -105,6 +104,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-projectionist'
 Plugin 'AndrewRadev/ember_tools.vim'
+Plugin 'mileszs/ack.vim'
 
 filetype plugin indent on
 
@@ -143,6 +143,9 @@ let g:splitjoin_align = 1
 
 " rspec-vim
 let g:rspec_command = "!rspec --no-colour {spec}"
+
+" Ack
+let g:ackprg = 'ag --vimgrep'
 
 " mappings
 let mapleader = ","
@@ -203,7 +206,7 @@ nmap sk :SplitjoinSplit<CR>
 nmap <Leader>s :Switch<CR>
 
 " silver searcher
-map <Leader>a :Ag! 
+map <Leader>a :Ack! 
 
 " rspec-vim
 map <Leader>tf :call RunCurrentSpecFile()<CR>
