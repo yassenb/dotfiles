@@ -152,8 +152,8 @@ let mapleader = ","
 
 map <Space> :
 
-map <C-w> :BD<CR>
-imap <C-w> <C-o>:BD<CR>
+map <C-u> :BD<CR>
+imap <C-u> <C-o>:BD<CR>
 map <C-Tab> :wincmd w<CR>
 
 map <Leader>h :nohlsearch \| cclose<CR>
