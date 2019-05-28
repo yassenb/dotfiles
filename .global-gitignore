@@ -3,5 +3,5 @@
 .project
 .envrc
 .rspec-local
-.agignore
+.ignore
 .projections.json
