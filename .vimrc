@@ -175,6 +175,10 @@ imap <C-l> <C-o>l
 map <C-j> <C-e>
 map <C-k> <C-y>
 
+" base64 encoding/decoding
+:vmap <leader>64 c<c-r>=system('base64', @")<cr><esc>
+:vmap <leader>46 c<c-r>=system('base64 --decode', @")<cr><esc>
+
 " some sane editor mappings for frequently used functionality
 map <C-s> :update<CR>
 imap <C-s> <C-o>:update<CR>
