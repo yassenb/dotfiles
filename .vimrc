@@ -105,6 +105,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'tpope/vim-projectionist'
 Plugin 'AndrewRadev/ember_tools.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'w0rp/ale'
 
 filetype plugin indent on
 
@@ -146,6 +147,12 @@ let g:rspec_command = "!rspec --no-colour {spec}"
 
 " Ack
 let g:ackprg = 'ag --vimgrep'
+
+" Ale
+let g:ale_linters = {
+\   'ruby': ['rubocop'],
+\}
+let g:ale_ruby_rubocop_executable = 'bundle'
 
 " mappings
 let mapleader = ","
