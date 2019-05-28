@@ -32,6 +32,9 @@ bindkey "${terminfo[kent]}" accept-line
 
 [ $(command -v rbenv) ] && eval "$(rbenv init -)"
 [ $(command -v direnv) ] && eval "$(direnv hook zsh)"
+if [ $commands[kubectl] ]; then
+  source <(kubectl completion zsh)
+fi
 
 # if this is removed and the last expression above has a bad exit code zsh will start with showing a bad exit code from
 # the previously executed command
