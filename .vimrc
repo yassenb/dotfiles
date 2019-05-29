@@ -135,6 +135,7 @@ let delimitMate_expand_cr = 1
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#ale#enabled = 1
 
 " splitjoin
 let g:splitjoin_split_mapping = ''
@@ -151,6 +152,7 @@ let g:ackprg = 'ag --vimgrep'
 " Ale
 let g:ale_linters = {
 \   'ruby': ['rubocop'],
+\   'html': { 'handlebars': ['ember-template-lint'] },
 \}
 let g:ale_ruby_rubocop_executable = 'bundle'
 
